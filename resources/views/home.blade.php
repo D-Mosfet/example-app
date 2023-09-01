@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>PT. Dinamika Indo Media</title>
+    <meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="Codrops" />
+	<link rel="shortcut icon" href="../favicon.ico">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/default.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/component.css') }}"/>
     <link rel="icon" href="{!! asset('image/logo.png') !!}">
     <link rel="stylesheet" href="{{ asset('css/navbar_style.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/reset.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
-
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
 <nav class="navbar navbar-expand-custom navbar-mainbg">
@@ -81,16 +87,7 @@
             <div class="slider-title-wrapper">
                 <span class="line"></span>
                 <h1 class="slider-title">
-                    <span>Projects</span>
                 </h1>
-            </div>
-            <div class="about">
-                <p>
-                    A pure CSS/JS slider layout<br/>
-                    Developed for Toptal engineering blog<br/>
-                    by <a href="http://stefan.lynxdev.io" target="_blank">Stefan V</a>,
-                    repo on <a href="https://github.com/vitass/pure-css-js-slider" target="_blank">Github</a>
-                </p>
             </div>
         </div>
         <nav id="slider-nav">
@@ -100,11 +97,66 @@
         </nav>
     </div>
 
-    <div><h1>Dinamika Indo Media</h1><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011
-di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang
-untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja
-pemerintahan yang bertempat di Kota Surabaya.</p></div>
-<div class= "customer"><h3>Customer Kami</h3><p>Komitmen kami dalam kualitas untuk menjaga nilai produk customer kami.</p></div>
+    <div class= "aboutus"><h3>Dinamika Indo Media</h3><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+
+    <ul class="grid cs-style-3">
+				<li>
+					<figure>
+						<img src="{{ asset('image/alatkesehatan.png') }}" alt="img04">
+						<figcaption>
+							<h3>Alat Kesehatan</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="{{ asset('image/alatpraktik.png') }}" alt="img01">
+						<figcaption>
+							<h3>Alat Praktik</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="{{ asset('image/ape.png') }}" alt="img02">
+						<figcaption>
+							<h3>APE</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="{{ asset('image/meubelair.png') }}" alt="img05">
+						<figcaption>
+							<h3>Meubel Air</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="{{ asset('image/multimedia.png') }}" alt="img03">
+						<figcaption>
+							<h3>Multimedia</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<figure>
+						<img src="{{ asset('image/moco.png') }}" alt="img06">
+						<figcaption>
+							<h3>Moco</h3>
+							<span>Dinamika Indo Media</span>
+						</figcaption>
+					</figure>
+				</li>
+			</ul>
+
+    <div class= "customer"><h3>Customer Kami</h3><p>Komitmen kami dalam kualitas untuk menjaga nilai produk customer kami.</p></div>
     <!-- slider customer -->
     <div class="wrapper">
 	<div class="slider">
@@ -209,5 +261,6 @@ pemerintahan yang bertempat di Kota Surabaya.</p></div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/toucheffects.js') }}"></script>
 </body>
 </html>
