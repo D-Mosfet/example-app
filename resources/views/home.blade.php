@@ -21,7 +21,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-custom navbar-mainbg">
-        <a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('image/logo.png') }}" alt="logo" style="height: 45px;"></a>
+        <section id="beranda"><a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('image/logo.png') }}" alt="logo" style="height: 45px;"></a></section>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -29,19 +29,19 @@
             <ul class="navbar-nav ml-auto">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="fas fa-tachometer-alt"></i><strong>Beranda</strong></a>
+                    <a class="nav-link" href="#beranda"><i class="fas fa-tachometer-alt"></i><strong>Beranda</strong></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-address-book"></i><strong>Profile</strong></a>
+                    <a class="nav-link" href="#profile"><i class="far fa-address-book"></i><strong>Profile</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i><strong>Product</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-calendar-alt"></i><strong>Customer</strong></a>
+                    <a class="nav-link" href="#customer"><i class="far fa-calendar-alt"></i><strong>Customer</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-chart-bar"></i><strong>Hubungi</strong></a>
+                    <a class="nav-link" href="#hubungi"><i class="far fa-chart-bar"></i><strong>Hubungi</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="javascript:void(0);"><i class="far fa-copy"></i><strong>Mitra</strong></a>
@@ -49,6 +49,10 @@
             </ul>
         </div>
     </nav>
+
+
+
+    <!-- Image Slider -->
     <div id="hero-slider">
         <div id="logo" class="mask">
             <span class="logo-text masked">PT. Dinamika Indo Media</span>
@@ -97,7 +101,57 @@
         </nav>
     </div>
 
-    <div class= "aboutus"><h3>Dinamika Indo Media</h3><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+    <!-- About Company -->
+<div class= "aboutus"><h3>Dinamika Indo Media</h3><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+
+<section class="service_section layout_padding">
+    <div class="service_container3">
+        <div class="container3 ">
+            <div class="heading_container3">
+            <h2>
+            Our <span>Services</span>
+            </h2>
+            <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
+            </p>
+            </div>
+            <div class="row3">
+                <div class="col-md-6 ">
+                    <div class="box3">
+                        <div class="img-box3">
+                        <img src="{{ asset('image/customer-service.png') }}" alt="">
+                        </div>
+                            <div class="detail-box3">
+                            <h5>
+                            Penyedia Jasa
+                            </h5>
+                            <p>
+                            fact that a reader will be distracted by the readable content of a page when looking at its layout.The point of using
+                            </p>
+                            </div>
+                    </div>
+                </div>
+                <div class="col-md-6 ">
+                    <div   div class="box3">
+                        <div class="img-box3">
+                        <img src="{{ asset('image/sale.png') }}" alt="">
+                        </div>
+                            <div class="detail-box3">
+                            <h5>
+                            Retail
+                            </h5>
+                            <p>
+                            fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                            The
+                            point of using
+                            </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
     <ul class="grid cs-style-3">
 				<li>
@@ -158,6 +212,7 @@
 
     <div class= "customer"><h3>Customer Kami</h3><p>Komitmen kami dalam kualitas untuk menjaga nilai produk customer kami.</p></div>
     <!-- slider customer -->
+    <section id="customer"></section>
     <div class="wrapper">
 	<div class="slider">
 	    <div class="slide-track">
@@ -231,27 +286,41 @@
       <div class="wave" id="wave3"></div>
       <div class="wave" id="wave4"></div>
     </div>
-    <ul class="social-icon">
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-facebook"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-twitter"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a></li>
-      <li class="social-icon__item"><a class="social-icon__link" href="#">
-          <ion-icon name="logo-instagram"></ion-icon>
-        </a></li>
-    </ul>
-    <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
-
+    <div class="row3">
+      <div class="col">
+        <img src="{{ asset('image/logo.png') }}" class="logo">
+        <section id="hubungi"><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011
+          di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang
+          untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja
+          pemerintahan yang bertempat di Kota Surabaya</p></section>
+      </div>
+      <div class="col">
+        <h3>Office</h3>
+        <p>JL. Karah Agung 45</p>
+        <p>Surabaya, Jawa Timur</p>
+        <p class="email-id"> info.jepepress@gmail.com</p>
+        <h4>+62318289999</h4>
+      </div>
+      <div class="col">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="https://siplah.temprina.co.id/">SIPLah Temprina</a></li>
+          <li><a href="https://www.jpbooks.id/">JPBooks Store</a></li>
+          <li><a href="https://cahayaquran.com/">Cahaya Quran</a></li>
+          <li><a href="https://temprina.com/main/index#">TemaTrade</a></li>
+          <li><a href="https://www.temapack.co.id/">TemaPack</a></li>
+          <li><a href="https://temprina.com/main/index#">BeLa Pengadaan</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h3>Email</h3>
+        <form>
+          <i class="far fa-envelope"></i>
+          <input type="email" placeholder="Enter your email id" required>
+          <button type="Submit"><i class="fas fa-arrow3-right"></i></button>
+        </form>
+      </div>
+    </div>
     </ul>
     <p>&copy;2023 Mahasiswa It Telkom Surabaya | All Right Reserved</p>
   </footer>
