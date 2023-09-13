@@ -20,7 +20,8 @@
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-expand-custom navbar-mainbg">
+
+<header><nav class="navbar navbar-expand-custom navbar-mainbg" id="navbar">
         <section id="beranda"><a class="navbar-brand navbar-logo" href="home"><img src="{{ asset('image/logo.png') }}" alt="logo" style="height: 45px;"></a></section>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
@@ -35,7 +36,7 @@
                     <a class="nav-link" href="#profile"><i class="far fa-address-book"></i><strong>Profile</strong></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0);"><i class="far fa-clone"></i><strong>Product</strong></a>
+                    <a class="nav-link" href="#produk"><i class="far fa-clone"></i><strong>Product</strong></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#customer"><i class="far fa-calendar-alt"></i><strong>Customer</strong></a>
@@ -48,25 +49,24 @@
                 </li>
             </ul>
         </div>
-    </nav>
-
-
+    </nav></header>
 
     <!-- Image Slider -->
     <div id="hero-slider">
         <div id="logo" class="mask">
             <span class="logo-text masked">PT. Dinamika Indo Media</span>
         </div>
+
         <div id="slideshow">
             <div id="slides-main" class="slides">
                 <div class="slide" data-index="0">
                     <div class="abs-mask">
-                        <div class="slide-image"><img src="{{ asset('image/slide-1.jpg') }}" alt="error"></div>
+                        <div class="slide-image"><img src="{{ asset('image/slidermoco.png') }}" alt="error"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="1">
                     <div class="abs-mask">
-                    <div class="slide-image"><img src="{{ asset('image/slide-2.jpg') }}" alt="error"></div>
+                    <div class="slide-image"><img src="{{ asset('image/legalitas.png') }}" alt="error"></div>
                     </div>
                 </div>
                 <div class="slide" data-index="2">
@@ -81,7 +81,7 @@
                 </div>
             </div>
             <div id="slides-aux" class="slides mask">
-                <h2 class="slide-title slide" data-index="0"><a href="#">#64 Paradigm</a></h2>
+                <h2 class="slide-title slide" data-index="0"><a href="#">#MOCO</a></h2>
                 <h2 class="slide-title slide" data-index="1"><a href="#">Industrial Works</a></h2>
                 <h2 class="slide-title slide" data-index="2"><a href="#">Future Lights</a></h2>
                 <h2 class="slide-title slide" data-index="3"><a href="#">The Colossal</a></h2>
@@ -102,14 +102,25 @@
     </div>
 
     <!-- About Company -->
-<div class= "aboutus"><h3>Dinamika Indo Media</h3><p>PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+
+<div class= "aboutus"><h3 style="font-family: Poppins, sans-serif; font-weight:bold;" id="profile">Dinamika Indo Media</h3><p style="line-height:1.2em;font-size:12pt">PT. DINAMIKA INDO MEDIA berdiri pada hari Kamis tanggal 10 Februari 2011 di Kabupaten Bekasi, saat ini kami bergerak dibidang pengadaan barang untuk pemenuhan kebutuhan instansi, Lembaga, dan satuan kerja pemerintahan yang bertempat di Kota Surabaya.</p></div>
+
+<div class="col1">
+<img src="{{ asset('image/ecatalogue.png') }}" alt="">
+<div class="col2">
+    <h3>Anda mencari mitra yang dapat diandalkan dalam mengembangkan bisnis Anda?</h3>
+    <p>PT. Dinamika Indo Media telah mengukir jejak sukses dalam dunia teknologi informasi selama lebih dari 10 tahun. Dengan pengalaman yang luas dan komitmen yang kuat terhadap pelayanan berkualitas, kami telah menjadi mitra kepercayaan bagi berbagai perusahaan dan lembaga terkemuka.</p>
+    <a href="https://e-katalog.lkpp.go.id/info/penyedia/252896"><button class="button" style="vertical-align:middle"><span>E-Catalogue</span></button></a>
+</div>
+</div>
+
 
 <section class="service_section layout_padding">
     <div class="service_container3">
         <div class="container3 ">
             <div class="heading_container3">
-            <h2>
-            Our <span>Services</span>
+            <h2 style="font-family: Poppins, sans-serif;">
+            Unit <span>Bisnis</span>
             </h2>
             <p>
             There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration
@@ -122,7 +133,7 @@
                         <img src="{{ asset('image/customer-service.png') }}" alt="">
                         </div>
                             <div class="detail-box3">
-                            <h5>
+                            <h5 style="font-family: Poppins, sans-serif;">
                             Penyedia Jasa
                             </h5>
                             <p>
@@ -137,7 +148,7 @@
                         <img src="{{ asset('image/sale.png') }}" alt="">
                         </div>
                             <div class="detail-box3">
-                            <h5>
+                            <h5 style="font-family: Poppins, sans-serif;">
                             Retail
                             </h5>
                             <p>
@@ -153,6 +164,37 @@
     </div>
 </section>
 
+<div class="col3">
+<h2>Penyedia Jasa</h2>
+<ul>
+    <li>Melayani Pembangunan Sekolah</li>
+    <li>Melayani Pembangunan Kantor/Instansi</li>
+    <li>Melayani Pembangunan Gudang</li>
+</ul>
+<div class="col4">
+<img src="{{ asset('image/konstruksi2.png') }}" alt="">
+</div>
+</div>
+
+<section class="con-retail">
+<div class="col1-retail">
+        <img src="{{ asset('image/retailstore.png') }}" alt="">
+        <div class=col2-retail>
+            <h2>Retail</h2>
+            <ul>
+            <li>Multimedia</li>
+            <li>meubelair</li>
+            <li>Alat Praktik</li>
+            <li>Alat Peraga Edukatif</li>
+            <li>Alat Kesehatan</li>
+            <li>Alat Tulis Kantor</li>
+            <li>Pupuk Organik Cair</li></ul>
+        </div>
+    </div>
+</section>
+
+
+<div class= "produk" style="font-weight=bold;"><h3 style="font-family: Poppins, sans-serif;" id="produk">Produk <span style="color:#0a97b0;">Kami</span></h3><p>Kami telah meningkatkan kinerja perusahaan dengan menjalin kerja sama bersama beberapa klien.</p></div>
     <ul class="grid cs-style-3">
 				<li>
 					<figure>
@@ -210,7 +252,7 @@
 				</li>
 			</ul>
 
-    <div class= "customer"><h3>Customer Kami</h3><p>Komitmen kami dalam kualitas untuk menjaga nilai produk customer kami.</p></div>
+    <div class= "customer" style="font-weight:bold;"><h3 style="font-family: Poppins, sans-serif;">Customer <span style="color:#0a97b0;">Kami</span></h3><p>"Kami besar dengan kepercayaan pelanggan dan kami memiliki visi untuk mengembangan produk kami hingga ke luar negeri."</p></div>
     <!-- slider customer -->
     <section id="customer"></section>
     <div class="wrapper">
